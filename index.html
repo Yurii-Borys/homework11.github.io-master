@@ -15,7 +15,7 @@
       </div>
       <div class="logo">
         <img class="logo-img" src="./logo/bonfire-thumbnail-440x300.jpg"></img></div>
-      <button class="cart">CART<span>(0)</span></button>
+      <button id="cart" class="cart">CART<span>(0)</span></button>
 </div>
 <div class="navigation flex spacearound">
 <div class="dropdown">
@@ -89,7 +89,7 @@
 <h3>Minimal top</h3>
 <p>Men shirt</p>
 <p><strong>$80.75</strong></p>
-<button class="btn-buy">BUY</button>
+<button id="myBtn" class="btn-buy">BUY</button>
 </div>
   <div class="picturebox">
     <img src="./img/clothes1.jpg" alt="clothes"/>
@@ -103,7 +103,7 @@
     <h3>Classic top</h3>
     <p>Women top</p>
     <p><strong>$184.00</strong></p>
-    <button class="btn-buy">BUY</button>
+    <button  class="btn-buy">BUY</button>
     </div>
 <div class="picturebox">
     <img src="./img/longsleeve.jpg" alt="longsleeve"/>
@@ -374,6 +374,30 @@
       <div><img src="./img/mastercard (1).png"/></div>
       <div><img src="./img/mastercard.png"/></div>
   </div>
+</div>
+<!-- Modal content -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <button class="btn-next push">Продовжити покупки</button>
+      <button class="btn-next cart">Перейти до корзини</button>
+    </div>
+  </div>
+</div>
+  <!-- cart content -->
+<div id="myModalCart" class="modalCart">
+  <div class="modal-content-cart">
+    <div class="modal-header-cart">
+      <span class="close-cart">&times;</span>
+    </div>
+    <div class="modal-body-cart">
+    </div>
+    </div>
+  </div>
+
 </div>
 </footer>
 <script src="./app.js"></script>
