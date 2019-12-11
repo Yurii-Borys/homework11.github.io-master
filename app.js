@@ -23,18 +23,32 @@ function showSlides() {
  
 let modal = document.getElementById("myModal");
 
-let buttons = document.querySelectorAll('.btn-buy'),
-    index, button;
+let buttons = document.querySelectorAll('.btn-buy');
+ buttons.forEach( btn=> btn.addEventListener('click', (e)=>clickHandler(e,btn)));
 
-for (index = 0; index < buttons.length; index++) {
-    button = buttons[index];
-    button.addEventListener('click', clickHandler);
-    
-}
 
-function clickHandler(event) {
+
+function clickHandler(event,btn) {
     modal.style.display = "block";
+    let valueDataset=JSON.parse(localStorage.getItem('valueDataset'));
+    if (valueDataset) {
+      valueDataset.push({
+        name:btn.dataset.name,
+        price:+btn.dataset.price,
+        id:btn.dataset.id
+      });
+    } else {
+      valueDataset= [{
+        name:btn.dataset.name,
+        price:+btn.dataset.price,
+        id:btn.dataset.id}];
+    }
+
+    localStorage.setItem('valueDataset', JSON.stringify(valueDataset));
+  
     event.preventDefault();
+    let parseObj=JSON.parse(localStorage.getItem('valueDataset'));
+    console.log(parseObj);
 }
 
 let span = document.getElementsByClassName("close")[0];
