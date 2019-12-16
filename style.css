@@ -59,6 +59,9 @@ body {
   border-color: #dbcfa2;
   text-align: center;
 }
+#cartNumber {
+color: green;
+}
 
 /*navigation*/
 .navigation {

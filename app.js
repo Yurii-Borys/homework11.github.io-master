@@ -22,8 +22,13 @@ function showSlides() {
 /*!-- Buy content -->*/
  
 let modal = document.getElementById("myModal");
-
+let btn2 = document.querySelector("#cart");
+let cartNumber = document.querySelector("#cartNumber");
+let contin=document.querySelector("#contin");
+let continueCart=document.querySelector("#continueCart");
 let buttons = document.querySelectorAll('.btn-buy');
+let cartProduct=document.querySelector('.modal-body-cart');
+
  buttons.forEach( btn=> btn.addEventListener('click', (e)=>clickHandler(e,btn)));
 
 
@@ -48,14 +53,26 @@ function clickHandler(event,btn) {
   
     event.preventDefault();
     let parseObj=JSON.parse(localStorage.getItem('valueDataset'));
-    console.log(parseObj);
+    let [one]=parseObj;
+    console.log(one.id);
+    cartNumber.innerHTML=' '+parseObj.length;    
+    cartProduct.innerHTML=parseObj.map(product =>`<div>${product.id}</div><div>${product.name}</div><div>${product.price}</div>`);
 }
+
+//continue buy
+contin.onclick = function(){
+    modal.style.display = "none";
+}
+
+
 
 let span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
 
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -71,10 +88,6 @@ window.onclick = function(event) {
 /*!-- Buy content -->*/
  
 let modal2 = document.getElementById("myModalCart");
-
-let btn2 = document.querySelector("#cart");
-console.log(btn2);
-
 let span2 = document.getElementsByClassName("close-cart")[0];
 
 btn2.addEventListener ("click",function() {
@@ -82,7 +95,8 @@ btn2.addEventListener ("click",function() {
 } );
 
 span2.onclick = function() {
-  modal2.style.display = "none";
+ 
+    modal2.style.display = "none";
 }
 
 window.onclick = function(event) {
@@ -91,5 +105,9 @@ window.onclick = function(event) {
   }
 }
 
-
+//continue => got to cart
+continueCart.onclick=function() {
+  modal.style.display="none";
+  modal2.style.display="block";
+}
 

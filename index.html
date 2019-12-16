@@ -15,7 +15,8 @@
       </div>
       <div class="logo">
         <img class="logo-img" src="./logo/bonfire-thumbnail-440x300.jpg"></img></div>
-      <button id="cart" class="cart">CART<span>(0)</span></button>
+      <button id="cart" class="cart" >CART<span id="cartNumber"></span></button>
+      
 </div>
 <div class="navigation flex spacearound">
 <div class="dropdown">
@@ -51,7 +52,7 @@
         <div class="style-dot">
               <span class="dot"></span> 
               <span class="dot"></span> 
-              <span class="dot"></span > 
+              <span class="dot"></span> 
         </div>
 </section>
 <div class="three-pict flex ">
@@ -378,22 +379,23 @@
 <!-- Modal content -->
 <div id="myModal" class="modal">
   <div class="modal-content">
+    <div class="modal-body">
+      <button id="contin" class="btn-next push">Продовжити покупки</button>
+      <button id="continueCart" class="btn-next cart">Перейти до корзини</button>
+    </div>
     <div class="modal-header">
       <span class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <button class="btn-next push">Продовжити покупки</button>
-      <button class="btn-next cart">Перейти до корзини</button>
     </div>
   </div>
 </div>
   <!-- cart content -->
 <div id="myModalCart" class="modalCart">
   <div class="modal-content-cart">
-    <div class="modal-header-cart">
-      <span class="close-cart">&times;</span>
-    </div>
     <div class="modal-body-cart">
+    </div>
+      <div class="modal-header-cart">
+        <span class="close-cart">&times;</span>
+      </div>
     </div>
     </div>
   </div>
