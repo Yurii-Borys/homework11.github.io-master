@@ -40,23 +40,23 @@ function clickHandler(event,btn) {
       valueDataset.push({
         name:btn.dataset.name,
         price:+btn.dataset.price,
-        id:btn.dataset.id
+        id:btn.dataset.id,
       });
     } else {
       valueDataset= [{
         name:btn.dataset.name,
         price:+btn.dataset.price,
-        id:btn.dataset.id}];
+        id:btn.dataset.id,
+        }];
     }
 
     localStorage.setItem('valueDataset', JSON.stringify(valueDataset));
   
     event.preventDefault();
     let parseObj=JSON.parse(localStorage.getItem('valueDataset'));
-    let [one]=parseObj;
-    console.log(one.id);
+    let number=0;
     cartNumber.innerHTML=' '+parseObj.length;    
-    cartProduct.innerHTML=parseObj.map(product =>`<div>${product.id}</div><div>${product.name}</div><div>${product.price}</div>`);
+    cartProduct.innerHTML=parseObj.map(product =>`<div class="product-view"><div>${number++}</div><div>${product.id}</div><div>${product.name}</div><div>${product.price}</div> <span class="close-cart">&times;</span></div>`);
 }
 
 //continue buy

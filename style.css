@@ -483,7 +483,7 @@ hr {
   padding: 0;
   border: 1px solid #888;
   width: 400px;
-  height: 100px;
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -519,4 +519,24 @@ hr {
   cursor: pointer;
 }
 
-.modal-body-cart {padding: 2px 16px;}
+.modal-body-cart {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 16px;}
+
+.product-view {
+  display: flex;
+  flex-direction: row;
+margin: 20px 10px 10px 10px;
+border: 1px solid black;
+justify-content: space-around;
+
+}
+.product-view div{
+  padding: 10px;
+  color: #000; 
+  border-right: 1px solid black;
+}
+.product-view div:last-child {
+  border: none;
+}
