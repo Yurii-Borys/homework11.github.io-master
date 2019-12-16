@@ -1,0 +1,447 @@
+/*Product*/
+
+.button20 {
+    border: 2px solid transparent;
+    background-color: green;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.button20:hover {
+    background-color: limegreen;
+}
+
+.product {
+    margin: 100px 0px 100px 100px;
+}
+
+
+/*logo+cart*/
+
+.logo-item {
+    justify-content: space-around;
+}
+
+.currency-img {
+    width: 30px;
+    margin-top: 20px;
+}
+
+.currency span {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.logo-img {
+    width: 180px;
+    height: 80px;
+}
+
+.cart {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border-color: #dbcfa2;
+    text-align: center;
+}
+
+
+/*navigation*/
+
+.navigation {
+    flex-direction: row;
+    height: 60px;
+    background-color: #f4f4f4;
+    padding-top: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-bar a {
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.sereach img {
+    width: 30px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-d-c {
+    flex-direction: column;
+}
+
+.flex-d-r {
+    flex-direction: row;
+}
+
+.align-right {
+    align-self: flex-end;
+}
+
+.padding-l-r-30 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-b {
+    margin-bottom: 20px;
+}
+
+.justify-c-c {
+    justify-content: center;
+}
+
+.text-align-c {
+    text-align: center;
+}
+
+.align-items-c {
+    align-items: center;
+}
+
+.gray {
+    color: gray
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.spacearound {
+    justify-content: space-around;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.margin-left600 {
+    margin-left: 600px;
+}
+
+.margin-l-10 {
+    margin-left: 10px;
+}
+
+.margin-l30 {
+    margin-left: 30px;
+}
+
+.margin-top {
+    margin-top: 5px;
+}
+
+.margin {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.margin-t-b {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.margin-top-30 {
+    margin-top: 30px
+}
+
+.padding-l-r {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.padding-t-r {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.padding-b20 {
+    padding-bottom: 20px;
+    margin-top: -25px;
+}
+
+.margin-l-50 {
+    margin-left: 50x;
+}
+
+
+/*Footer*/
+
+footer {
+    background: #181818;
+    color: gray;
+}
+
+.footercolumn1 {
+    width: 25%;
+}
+
+.footercolumn1 h2 {
+    text-align: center;
+    color: gray;
+    text-shadow: 1px 1px 2px white, 0 0 1em white;
+    letter-spacing: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.footercolumn1 p {
+    text-align: justify;
+}
+
+.mix-blend {
+    background-color: #181818;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.mix-blend img {
+    mix-blend-mode: lighten;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-column2 {
+    width: 25%;
+}
+
+.nav-foot {
+    flex-direction: row;
+}
+
+.nav-foot-link {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.nav-foot a {
+    padding-bottom: 30px;
+    color: gray;
+    font-size: 14px;
+}
+
+.nav-foot a:hover {
+    color: white;
+}
+
+.footer-column3 {
+    width: 25%
+}
+
+.tags-el {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tags {
+    border-radius: 8px;
+    background-color: #181818;
+    color: gray;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 2px;
+}
+
+.tags:hover {
+    background: #2F2F2F;
+    color: white;
+}
+
+.footer-column4 {
+    width: 25%;
+}
+
+.bottom-footer {
+    height: 70px;
+    background-color: black;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+.bottom-footer p {
+    flex-basis: 60%;
+}
+
+.b-f-i {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.b-f-i img {
+    background-color: #FFFFFF;
+    width: 45px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+/*Product card*/
+
+.black {
+    border: 1px solid transparent;
+    height: 30px;
+    width: 60px;
+    background-color: black;
+    color: transparent;
+}
+
+.white {
+    border: 1px solid silver;
+    height: 30px;
+    width: 60px;
+    background-color: white;
+    color: transparent;
+}
+
+.gray {
+    border: 1px solid silver;
+    height: 30px;
+    width: 60px;
+    background-color: gray;
+    color: transparent;
+}
+
+.blue {
+    border: 1px solid silver;
+    height: 30px;
+    width: 60px;
+    background-color: midnightblue;
+    color: transparent;
+}
+
+.productinfo {
+    margin-left: 100px;
+}
+
+.black:hover {
+    background-color: #2F2F2F;
+}
+
+.white:hover {
+    background-color: #CED5DB;
+}
+
+.gray:hover {
+    background-color: #9FA4A9
+}
+
+.blue:hover {
+    background-color: #196259;
+}
+
+.selectcolor {
+    margin-top: 50px;
+    margin-bottom: -20px;
+    font-size: larger;
+}
+
+.selectsize {
+    font-size: larger;
+    margin-bottom: -20px;
+}
+
+.xs {
+    height: 30px;
+    width: 50px;
+}
+
+.s {
+    height: 30px;
+    width: 50px;
+}
+
+.m {
+    height: 30px;
+    width: 50px;
+}
+
+.l {
+    height: 30px;
+    width: 50px;
+}
+
+.xs:hover {
+    background-color: black;
+    color: white;
+}
+
+.s:hover {
+    background-color: black;
+    color: white;
+}
+
+.m:hover {
+    background-color: black;
+    color: white;
+}
+
+.l:hover {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: slategray;
+}
